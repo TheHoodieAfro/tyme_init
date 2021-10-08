@@ -16,7 +16,7 @@
 		<link rel="stylesheet" href="../css/shards.min.css">
 	</head>	
 	<body>
-		<form action="#" th:action="@{/users/add}" th:object="${user}" method="post">
+		<form action="#" th:action="@{/add}" th:object="${user}" method="post">
 			<p>name:
 			<input type="text" id="name" th:field="*{name}">
 			</p>
@@ -26,7 +26,7 @@
 			</p>
 			
 			<p>date:
-			<input type="date" id="date" th:field="*{birthDate}">
+			<input type="date" id="date" th:field="*{email}">
 			</p>
 			
 			<div>
@@ -45,7 +45,7 @@
 				</select>
 			</div>
 			
-			<button type="submit" name="action" value="submit">Submit</button>
+			<button type="submit">Submit</button>
 		</form>
 	</body>
 </html>
